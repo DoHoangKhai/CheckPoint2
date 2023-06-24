@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/arial-rounded-mt-bold" rel="stylesheet">
+
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/af3bdff4d6.js" crossorigin="anonymous"></script>
+                
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="menu-bar">
+            
+            
+
+            <div class="advisor-account">
+                <div class="advisor-title">
+                    <div class="advisor-logo">
+                        <img src="../../../assets/icon/UserCircle.svg" alt="">
+                    </div>
+
+                    <div class="advisor-role">
+                        <h4>Admin1</h4>
+                        <h5>Manager</h5>
+                    </div>
+                </div>
+            </div>
+            <img src="../../../assets/img/Rectangle 426.png" alt="">
+
+            <div class="entity-bar">
+                <div class="bar-curve"><div class="layer"></div></div>
+                <img src="../../../assets/icon/Users.svg" alt="">
+                <h3>Entities</h3>
+                <img src="../../../assets/icon/Vector.svg" id="last-child-vector">
+                <div class="bar-curve"><div class="layer"></div></div>
+            </div>
+
+            <div class="logout-bar">
+                <img src="../../../assets/icon/SignOut.svg" alt="">
+                <h3>Log Out</h3>
+            </div>
+        </div>
+
+        <div class="adviser-bar">
+            <h3>Advisors</h3>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <img src="../../../assets/icon/MagnifyingGlass.svg" id="glasses">
+                
+                <a id="trashed" data-toggle="modal" data-target="#example">Delete</a>
+                <img src="../../../assets/icon/Trash.svg" id="trash">
+                <span data-toggle="modal" data-target="#exampleModal">Edit</span>
+                <img src="../../../assets/icon/PencilLine.svg" id="pencil_line">
+            </div>
+
+            
+            <table class="table-section" id="table-advisor">
+                <div class="seperated-line"></div>
+
+                    <tr>
+                        <th><img id="check-box" src="../../../assets/icon/Square.svg" alt=""></th>
+                        <th>ID <img src="../../../assets/icon/ArrowsDownUp.svg" alt=""></th>
+                        <th>Advisor Name</th>
+                        <th>Email</th>
+                        <th>Company<img src="../../../assets/icon/ArrowsDownUp.svg" alt=""></th>
+                        <th>Role<img src="../../../assets/icon/ArrowsDownUp.svg" alt=""></th>
+                        <th>Fluffle Name</th>
+                        <th>Customer</th>
+                        <th>Wallet</th>
+                        <th>Action</th>
+                    </tr>
+
+            </table>
+        </div>
+    </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add new advisor</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input type="number" placeholder="Enter ID" id="NewID">
+          <input type="text" placeholder="Enter Advisor Name" id="NewName">
+          <input type="email" placeholder="Enter Email" id="NewEmail">
+          <input type="text" placeholder="Enter Company" id="NewCompany">
+          <input type="text" placeholder="Enter Role" id="NewRole">
+          <input type="text" placeholder="Enter Fluffle Name" id="NewFluffle">
+          <input type="number" placeholder="Enter Customer" id="NewCustomer">
+          <input type="number" placeholder="Enter Wallet" id="NewWallet">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="Add_Admin">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="example" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Remove advisor</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <input type="text" placeholder="Enter Username want to removed" id="remove_advisor">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="Delete_Admin">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="./app.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+

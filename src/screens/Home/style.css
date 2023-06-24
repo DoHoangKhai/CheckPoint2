@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;                                          
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+.wrapper .menu-bar{
+    background: #FFD834;
+    position: relative;
+}
+
+.wrapper .menu-bar .advisor-account{
+    width: 100%;
+    height: 81px;
+    background: #304D95;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+}
+
+.wrapper .menu-bar .advisor-account .advisor-title{
+    display: flex;
+    margin-left: 41px;
+}
+
+.wrapper .menu-bar .advisor-account .advisor-title h4{
+    margin: 0;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.wrapper .menu-bar .advisor-account .advisor-title h5{
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.wrapper .menu-bar .advisor-account .advisor-title .advisor-logo{
+    background: #FFD834;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .menu-bar .advisor-account .advisor-title .advisor-logo img{
+    width: 35px;
+}
+
+.wrapper .menu-bar .advisor-account .advisor-title .advisor-role{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.wrapper .menu-bar .entity-bar{
+    width: 250px;
+    height: 56px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 160px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.wrapper .menu-bar .entity-bar img{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.wrapper .menu-bar .entity-bar #last-child-vector{
+    width: 10px;
+    height: 5px;
+    margin-left: 98px;
+}
+
+.wrapper .menu-bar h3{
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #304D95;
+    margin-left: 17px;
+}
+
+.wrapper .menu-bar .entity-bar .bar-curve{
+    width: 56px;
+    height: 56px;
+    background: #FFFFFF;
+    position: absolute;
+    right: 0;
+    top: 56px;
+}
+
+.wrapper .menu-bar .entity-bar .bar-curve:last-child{
+    right: 0;
+    top: -56px;
+    z-index: 1;
+}
+
+.wrapper .menu-bar .entity-bar .bar-curve .layer{
+    width: 100%;
+    height: 100%;
+    background: #FFD834;
+    border-top-right-radius: 20px;
+}
+
+.wrapper .menu-bar .entity-bar .bar-curve:last-child .layer{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 20px;
+}
+
+.wrapper .menu-bar .logout-bar{
+    display: flex;
+    align-items: center;
+    margin-left: 54px;
+    margin-top: 29px;
+}
+
+.wrapper .adviser-bar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 58px;
+}
+
+.wrapper .adviser-bar .search-bar{
+    width: 95%;
+    position: relative;
+    display: flex;
+}
+
+.wrapper .adviser-bar .search-bar input{
+    border: 2px solid #BDBDBD;
+    border-radius: 20px;
+    padding: 12px 113px 12px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+}
+
+
+.wrapper .adviser-bar .search-bar a{
+    background: #FFFFFF;
+    border: 1px solid #666666;
+    border-radius: 26px;
+    padding: 14.5px 14px 14.5px 50px;
+    text-decoration: none;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #666666;
+    margin-left: 435px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.wrapper .adviser-bar .search-bar span{
+    background: #FFFFFF;
+    background:  #FFD834;
+    border-radius: 26px;
+    padding: 14.5px 14px 14.5px 50px; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.wrapper .adviser-bar h3{
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: #304D95;
+    margin-top: 44px;
+    margin-bottom: 40px;
+}
+
+.wrapper .adviser-bar .search-bar img{
+    position: absolute;
+}
+
+.wrapper .adviser-bar .search-bar #glasses{
+    top: 11px;
+    left: 265px;
+}
+
+.wrapper .adviser-bar .search-bar #trash{
+    top: 11px;
+    right: 225px;
+}
+
+.wrapper .adviser-bar .search-bar #pencil_line{
+    top: 11px;
+    right: 100px;
+}
+
+.wrapper .adviser-bar .table-section{
+    width: 108%;
+    margin-top: 38px;
+    border-collapse: collapse;
+}
+
+.wrapper .adviser-bar .table-section tr th{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.wrapper .adviser-bar .table-section tr th input{
+    width: 19px;
+    height: 19px;
+    cursor: pointer
+}
+
+.wrapper .adviser-bar .table-section .worker th{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: #333333;
+    padding: 15px 20px;
+    border: none;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.wrapper .adviser-bar .table-section tr th img{
+    margin-left: 2px;
+}
